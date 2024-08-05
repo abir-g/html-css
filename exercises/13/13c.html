@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail IOS flexbox</title>
+  <style>
+    p{
+      margin: 0;
+      font-family: Arial;
+    }
+    .flexbox{
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 400px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .header-container{
+      margin-bottom: 20px;
+    }
+
+    .header{
+      color: lightslategray;
+      font-size: 14px;
+    }
+
+    .main-content-container{
+      column-gap: 18px;
+      display: flex;
+      flex: 1;
+    }
+
+    .profile-picture{
+      height: 50px;
+      border-radius: 25px;
+    }
+
+    .main-content-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title{
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .time{
+      font-size: 14px;
+      color: lightslategrey;
+    }
+
+    .subject{
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .content{
+      font-size: 15px;
+      color: lightslategray;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="flexbox">
+    <div class="header-container">
+      <p class="header">ALL INBOXES</p>
+    </div>
+
+    <div class="main-content-container">
+      <div class="image-container">
+        <img class="profile-picture" src="../../channel-pictures/channel-1.jpeg" alt="">
+      </div>
+      <div class="main-content">
+        <div class="main-content-header">
+          <p class="title">Chewy Promotions</p>
+          <p class="time">4:58pm</p>
+        </div>
+        <p class="subject">Biggest sales of the year!</p>
+        <p class="content">Hey there! We're writing to tell you about our...</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
