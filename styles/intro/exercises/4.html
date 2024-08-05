@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4</title>
+</head>
+<body>
+
+  <button class="stretch-button">Strech</button>
+  <button class="shadow-button"> Shadow </button>
+
+  <div>
+    <button class="number-button">One</button>
+    <button class="number-button">Two</button>
+    <button class="number-button">Three</button>
+  </div>
+  <style>
+    div{
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: rgb(9, 134, 26);
+      border: none;
+      color:  white;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: padding 300ms;
+    }
+
+    .stretch-button:hover {
+      padding: 15px 30px;
+
+    }
+
+    .shadow-button:active {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .number-button {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      transition: padding 0.15s,
+      margin 0.15s;
+
+    }
+
+    .number-button:hover {
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  </style>
+</body>
+</html>
