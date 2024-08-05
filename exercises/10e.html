@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10E exercise</title>
+  <style>
+
+    p{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .grid-layout{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+      align-items: center;
+    }
+    .profile{
+      border: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+      padding: 10px 8px;
+    }
+
+    .profile-picture {
+      width: 100%;
+    }
+
+    .name{
+      font-weight: bold;
+      /* margin-left: 8px; */
+      margin-bottom: 10px;
+    }
+
+    .mutual-friends-row {
+      margin-bottom: 10px;
+    }
+
+    .mutual-friends-picture{
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 20px;
+      vertical-align: middle;
+    }
+
+    .mutual-friends{
+      display: inline-block;
+      color: rgb(99, 98, 98);
+    }
+
+    .add-friends{
+      background-color: rgb(26, 125, 246);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="grid-layout">
+    <div class="profile">
+      <img class="profile-picture" src="../thumbnails/thumbnail-1.webp">
+      <p class="name">
+        Oliver
+      </p>
+      <div class="mutual-friends-row">
+          <img class="mutual-friends-picture" src="../channel-pictures/channel-2.jpeg">
+          <p class="mutual-friends">
+            2 mutual friends
+          </p>
+      </div>
+      <button class="add-friends">Add friends</button>
+    </div>
+    <div class="profile">
+      <img class="profile-picture" src="../thumbnails/thumbnail-1.webp">
+      <p class="name">
+        Oliver
+      </p>
+      <div class="mutual-friends-row">
+          <img class="mutual-friends-picture" src="../channel-pictures/channel-2.jpeg">
+          <p class="mutual-friends">
+            2 mutual friends
+          </p>
+      </div>
+      <button class="add-friends">Add friends</button>
+    </div>
+    <div class="profile">
+      <img class="profile-picture" src="../thumbnails/thumbnail-1.webp">
+      <p class="name">
+        Oliver
+      </p>
+      <div class="mutual-friends-row">
+          <img class="mutual-friends-picture" src="../channel-pictures/channel-2.jpeg">
+          <p class="mutual-friends">
+            2 mutual friends
+          </p>
+      </div>
+      <button class="add-friends">Add friends</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
