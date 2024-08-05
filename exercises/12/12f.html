@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12f exercises</title>
+  <style>
+    p{
+      font-family: Arial;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rebeccapurple;
+      column-gap: 50px ;
+      padding: 10px 15px;
+      align-items: center;
+    }
+
+    .search-bar {
+      flex: 1;
+      border: none;
+      border-radius: 20px;
+      height: 30px;
+      padding: 1px 15px;
+    }
+
+    .download-button{
+      border: solid;
+      border-color: white;
+      border-width: 1px;
+      background-color: rebeccapurple;
+      color: white;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 150ms;
+    }
+
+    .home{
+      font-weight: bolder;
+      color: white;
+    }
+
+    .download-button:hover{
+      color: rebeccapurple;
+      background-color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="home">Home</p>
+    <input class="search-bar" type="text" placeholder="Search">
+    <button class="download-button">Download</button>
+  </div>
+</body>
+</html>
