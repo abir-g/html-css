@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord double-sidebar</title>
+
+  <style>
+    body{
+      font-family: Arial;
+    }
+    p{
+      margin: 0;
+    }
+
+    .first-sidebar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      position: fixed;
+      background-color: rgb(33, 33, 33);
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      padding-top: 30px;
+    }
+
+    .server-images{
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .second-sidebar{
+      position: fixed;
+      left: 80px;
+      top: 0px;
+      bottom: 0px;
+      width: 160px;
+      background-color: rgb(55, 55, 55);
+      padding: 10px;
+      padding-top: 30px;
+    }
+
+    .info-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .info{
+      color: white;
+
+    }
+
+    .plus-button{
+      color: rgb(150, 150, 150);
+      font-size: 25px;
+    }
+
+    .channel {
+    color: rgb(150, 150, 150);
+    margin-bottom: 16px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div class="first-sidebar">
+    <img class="server-images" src="../../channel-pictures/channel-1.jpeg" alt="">
+    <img class="server-images" src="../../channel-pictures/channel-2.jpeg" alt="">
+  </div>
+  <div class="second-sidebar">
+    <div class="info-header">
+      <p class="info">INFO</p>
+      <p class="plus-button" >+</p>
+    </div>
+    <div class="channel"># new-videos</div>
+    <div class="channel"># updates</div>
+    <div class="channel"># faq</div>
+  </div>
+
+</body>
+</html>

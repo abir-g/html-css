@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook header</title>
+
+  <style>
+    body{
+      height: 3000px;
+    }
+
+    p{
+      margin: 0;
+    }
+
+    .header{
+      display: flex;
+      align-items: center;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+
+    .profile{
+      display: flex;
+      flex: 1;
+      padding: 10px 50px;
+      align-items: center;
+    }
+
+    .profile-picture{
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .user-name{
+      font-weight: bold;
+    }
+
+    .add-friend-button{
+      background-color: rgb(25, 84, 194);
+      border: none;
+      padding: 5px;
+      border-radius: 3px;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .message-button{
+      background-color: rgb(234, 240, 247);
+      color: black;
+      border: none;
+      border-radius: 3px;
+      padding: 5px;
+      font-weight: bold;
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+  <div class="header">
+    <div class="profile">
+      <img class="profile-picture" src="../../channel-pictures/channel-1.jpeg" alt="">
+      <p class="user-name">Oliver Cat</p>
+    </div>
+    <div class="action-buttons">
+      <button class="add-friend-button">Add friend</button>
+      <button class="message-button">Message</button>
+    </div>
+  </div>
+</body>
+</html>

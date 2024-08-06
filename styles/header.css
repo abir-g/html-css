@@ -3,6 +3,17 @@
   flex-direction: row;
   height: 55px;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: lightslategray;
 }
 
 
@@ -30,7 +41,7 @@
   border-color: lightslategray;
   border-radius: 2px;
   box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
-  width: 20px;
+  width: 20px ;
 }
 
 .search-icon{
