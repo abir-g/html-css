@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Flexbox</title>
+
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p{
+      margin: 0;
+    }
+
+    .container{
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      padding: 15px 15px;
+    }
+
+    .title-container{
+      display: flex;
+      column-gap: 15px;
+    }
+
+    .profile-picture{
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .user-profile-container{
+      display: flex;
+      column-gap: 10px;
+      justify-content: baseline;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .user-name{
+      font-weight: 700;
+      
+    }
+
+    .user-id{
+      font-weight: 400;
+      color: lightslategrey;
+    }
+
+    .user-post{
+      flex: 1;
+    }
+
+    .link-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+    }
+
+    .left-section-link-container{ 
+    width: 100px;
+    height: 100px;
+    background-color: rgb(220, 220, 220);
+    margin-right: 10px;
+    }
+
+    .right-section-link-container{
+      flex:1;
+    }
+
+    .website-link{
+      color: rgb(111, 111, 111);
+    margin-bottom: 3px;
+   }
+    
+   .video-title {
+    line-height: 22px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="title-container">
+      <div class="left-section">
+        <img class="profile-picture" src="../../channel-pictures/channel-1.jpeg" alt="">
+      </div>
+      <div class="right-section-title-container">
+        <div class="user-profile-container">
+          <p class="user-name">supersimple.dev</p>
+          <p class="user-id">@SuperSimpleDev</p>
+        </div>
+        <div class="user-text">
+          <p class="user-post">
+            what is backend web development? A complete overview.
+            New video is up!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="link-container">
+      <div class="left-section-link-container">
+
+      </div>
+      <div class="right-section-link-container">
+        <p class="website-link">youtube.com</p>
+        <p class="video-title">
+          Backend web development - a complete overview (2021)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="title-container">
+      <div class="left-section">
+        <img class="profile-picture" src="../../channel-pictures/channel-1.jpeg" alt="">
+      </div>
+      <div class="right-section-title-container">
+        <div class="user-profile-container">
+          <p class="user-name">supersimple.dev</p>
+          <p class="user-id">@SuperSimpleDev</p>
+        </div>
+        <div class="user-text">
+          <p class="user-post">
+            what is backend web development? A complete overview.
+            New video is up!
+          </p>
+        </div>
+        <div class="link-container">
+          <div class="left-section-link-container">
+          </div>
+          <div class="right-section-link-container">
+            <p class="website-link">youtube.com</p>
+            <p class="video-title">
+              Backend web development - a complete overview (2021)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
