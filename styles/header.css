@@ -47,7 +47,6 @@
 
 .search-icon{
   height: 25px;
-  margin-top: 4px;
 }
 
 .search-bar::placeholder{
@@ -74,6 +73,15 @@
   height: 20px;
 }
 
+.search-button, 
+.voice-search-button, 
+.upload-icon-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .search-button{
   height: 40px;
   width: 66px;
@@ -83,7 +91,28 @@
   border-color: lightslategray;
   margin-left: -1px;
   margin-right: 10px;
+}
 
+.search-button .tool-tip,
+.voice-search-button .tool-tip, 
+.upload-icon-container .tool-tip{
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  position: absolute;
+  background-color: grey;
+  color: white;padding: 4px 8px;
+  border-radius: 2px;
+  bottom: -30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms;
+  white-space: nowrap;
+}
+
+.search-button:hover  .tool-tip,
+.voice-search-button:hover .tool-tip,
+.upload-icon-container:hover .tool-tip{ 
+  opacity: 1;
 }
 
 .voice-search-button{
@@ -96,7 +125,6 @@
 
 .voice-search-icon{
   height: 24px;
-  margin-top: 4px;
 }
 
 .upload-icon {
