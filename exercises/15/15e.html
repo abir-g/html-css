@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing mockup</title>
+
+  <style>
+  body{
+    font-family: Arial;
+  }
+  .container {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 340px;
+    background-color: aqua;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 200ms ease-in-out;
+    margin: 10px 20px;
+  } 
+
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sale{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+
+    padding: 3px 5px;
+    background-color: black;
+    opacity: 0.95;
+    color: white;
+  }
+
+  .add-to-cart-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(245, 245, 245, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  }
+
+  .container:hover{
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+
+  }
+
+  .container:hover .add-to-cart-container {
+    opacity: 1;
+  }
+
+  .add-to-cart-button{
+    padding: 10px 15px;
+    font-weight: 550;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+  }
+
+  </style>
+
+
+</head>
+<body>
+  <div class="container">
+    <img class="product-image" src="../../prada-jacket.jpeg" alt="">
+    <div class="sale">
+      20% OFF
+    </div>
+    <div class="add-to-cart-container">
+      <button class="add-to-cart-button">Add To Cart</button>
+    </div>
+  </div>
+  <div class="container">
+    <img class="product-image" src="../../prada-jacket.jpeg" alt="">
+    <div class="sale">
+      20% OFF
+    </div>
+    <div class="add-to-cart-container">
+      <button class="add-to-cart-button">Add To Cart</button>
+    </div>
+  </div>
+  <div class="container">
+    <img class="product-image" src="../../prada-jacket.jpeg" alt="">
+    <div class="sale">
+      20% OFF
+    </div>
+    <div class="add-to-cart-container">
+      <button class="add-to-cart-button">Add To Cart</button>
+    </div>
+  </div>
+  <div class="container">
+    <img class="product-image" src="../../prada-jacket.jpeg" alt="">
+    <div class="sale">
+      20% OFF
+    </div>
+    <div class="add-to-cart-container">
+      <button class="add-to-cart-button">Add To Cart</button>
+    </div>
+  </div>
+</body>
+</html>
